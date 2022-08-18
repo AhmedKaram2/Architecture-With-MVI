@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    // main colors
+    <color name="primary">#BF9E66</color>
+    <color name="primary_dark">#a38757</color>
+<!--    <color name="primary_light">#f5ca81</color>-->
+    <color name="accent">#b42a40</color>
+    <color name="material_red_200">#ba122b</color>
+    <color name="material_red_100">#FF5E5B</color>
+    <color name="material_red_500">#550000</color>
+
+    <color name="secondary_text">#757575</color>
+    <color name="info_color">#1f428c</color>
+    <color name="icons">#FFFBFF</color>
+    <color name="light_blue">#BCC7FF</color>
+
+    // another colors
+    <color name="green">#23CE6B</color>
+    <color name="green_transparent">#4caf51</color>
+    <color name="light_green">#DCF8C6</color>
+    <color name="dark_green">#259b24</color>
+    <color name="yellow">#F0E68C</color>
+    <color name="orange">#EC7357</color>
+    <color name="orange_transparent">#57f57f17</color>
+    <color name="dark_gray">#515052</color>
+    <color name="gray">#878787</color>
+    <color name="light_gray">#F2FDFF</color>
+    <color name="very_light_gray">#f3f3f3</color>
+    <color name="white_transparent">#57fdfdfd</color>
+    <color name="black_transparent">#47000000</color>
+    <color name="red">#FF5E5B</color>
+    <color name="light_red">#ffe8e7</color>
+    <color name="blue">#4EA5D9</color>
+    <color name="black">#000103</color>
+    <color name="white">#ffffff</color>
+
+</resources>

@@ -1,0 +1,209 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppThemeBase" parent="Base.Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="android:windowBackground">@color/very_light_gray</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:typeface">monospace</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="colorControlNormal">@color/primary</item>
+        <item name="colorControlActivated">@color/primary</item>
+        <item name="fontFamily">@font/my_custom_font_family</item>
+
+        <!-- Contextual actionbar background -->
+        <item name="android:actionModeBackground">@color/primary</item>
+        <!-- Large text color (in actionbar and toolbar)-->
+        <item name="android:textColorPrimary">@android:color/darker_gray</item>
+        <!-- Medium text color -->
+        <item name="android:textColorSecondary">@color/primary</item>
+        <item name="android:layoutDirection">rtl</item>
+        <!-- Small text color -->
+        <item name="android:textColorTertiary">@color/dark_gray</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:editTextColor">@color/dark_gray</item>
+        <item name="editTextColor">@color/dark_gray</item>
+        <!-- Text selection color -->
+        <item name="android:textColorHighlight">@color/green_transparent</item>
+        <item name="colorButtonNormal">@color/primary</item>
+        <!-- EditText style -->
+        <item name="editTextStyle">@style/MyEditText</item>
+        <item name="android:editTextStyle">@style/MyEditText</item>
+        <!-- Toolbar Style -->
+        <item name="toolbarStyle">@style/MyToolbar</item>
+        <!-- RadioButton style -->
+        <item name="android:radioButtonStyle">@style/MyRadioButton</item>
+        <!-- Checkbox style -->
+        <item name="android:checkboxStyle">@style/MyCheckbox</item>
+        <!-- Spinner style -->
+        <item name="android:spinnerStyle">@style/MySpinner</item>
+        <!-- ListView style -->
+        <item name="android:listViewStyle">@style/MyListView</item>
+        <item name="android:textSize">@dimen/detailsMainTextSize</item>
+        <item name="android:labelTextSize">@dimen/detailsMainTextSize</item>
+        <item name="android:keyTextSize">@dimen/detailsMainTextSize</item>
+        <!-- RatingBar style -->
+        <item name="android:ratingBarStyle">@style/MyRatingBar</item>
+        <item name="ratingBarStyle">@style/MyRatingBar</item>
+    </style>
+
+    <style name="AppTheme" parent="AppThemeBase" />
+
+    <style name="AppTheme.FullScreen" parent="AppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="AppTheme.BlackTheme" parent="AppTheme">
+        <item name="colorPrimary">@android:color/black</item>
+        <item name="colorPrimaryDark">@android:color/black</item>
+        <item name="colorAccent">@android:color/white</item>
+    </style>
+
+    <style name="RedButtonTheme">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:colorButtonNormal">@color/red</item>
+        <item name="android:colorPressedHighlight">@color/gray</item>
+        <item name="android:textColor">@color/icons</item>
+        <item name="android:textSize">@dimen/above_medium_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/rounded_red_button</item>
+        <item name="android:layout_marginStart">@dimen/top_down_margin</item>
+        <item name="android:layout_marginEnd">@dimen/top_down_margin</item>
+        <item name="android:padding">@dimen/top_down_margin</item>
+    </style>
+
+    <style name="GreenButtonTheme">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:colorButtonNormal">@color/green</item>
+        <item name="android:colorPressedHighlight">@color/gray</item>
+        <item name="android:textColor">@color/icons</item>
+        <item name="android:textSize">@dimen/above_medium_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/rounded_green_button</item>
+        <item name="android:layout_marginStart">@dimen/top_down_margin</item>
+        <item name="android:layout_marginEnd">@dimen/top_down_margin</item>        <item name="android:padding">@dimen/top_down_margin</item>
+
+    </style>
+
+    <style name="GRAYButtonTheme">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:colorButtonNormal">@color/gray</item>
+        <item name="android:colorPressedHighlight">@color/gray</item>
+        <item name="android:textColor">@color/icons</item>
+        <item name="android:textSize">@dimen/above_medium_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginStart">@dimen/top_down_margin</item>
+        <item name="android:layout_marginEnd">@dimen/top_down_margin</item>        <item name="android:padding">@dimen/top_down_margin</item>
+    </style>
+
+    <style name="BlueButtonTheme">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:colorButtonNormal">@color/blue</item>
+        <item name="android:colorPressedHighlight">@color/gray</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/above_medium_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/rounded_blue_button</item>
+        <item name="android:layout_marginStart">@dimen/top_down_margin</item>
+        <item name="android:layout_marginEnd">@dimen/top_down_margin</item>        <item name="android:padding">@dimen/top_down_margin</item>
+    </style>
+
+    <style name="OrangeButtonTheme">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:colorButtonNormal">@color/orange</item>
+        <item name="android:colorPressedHighlight">@color/gray</item>
+        <item name="android:textColor">@color/icons</item>
+        <item name="android:textSize">@dimen/above_medium_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/rounded_orange_button</item>
+        <item name="android:layout_marginStart">@dimen/top_down_margin</item>
+        <item name="android:layout_marginEnd">@dimen/top_down_margin</item>        <item name="android:padding">@dimen/top_down_margin</item>
+
+    </style>
+
+    <style name="PrimaryButtonTheme">
+        <item name="android:minHeight">@dimen/button_height</item>
+        <item name="android:colorButtonNormal">@color/primary</item>
+        <item name="android:colorPressedHighlight">@color/gray</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/above_medium_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/rounded_primary_button</item>
+        <item name="android:layout_marginStart">@dimen/top_down_margin</item>
+        <item name="android:layout_marginEnd">@dimen/top_down_margin</item>        <item name="android:padding">@dimen/top_down_margin</item>
+
+    </style>
+
+    <style name="CircleButtonTheme">
+        <item name="android:minHeight">48dp</item>
+        <item name="android:colorButtonNormal">@color/primary</item>
+        <item name="android:colorPressedHighlight">@color/gray</item>
+        <item name="android:textColor">@color/icons</item>
+        <item name="android:textSize">@dimen/above_medium_text</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/dark_green_circle</item>
+        <item name="android:layout_marginStart">@dimen/top_down_margin</item>
+        <item name="android:layout_marginEnd">@dimen/top_down_margin</item>
+    </style>
+
+    <style name="AppTheme.Translucent" />
+
+    <style name="AppTheme.FullTranslucent" />
+
+    <style name="AppTheme.FloatingTransparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+
+    <style name="MyEditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textSize">@dimen/large_text</item>
+        <item name="android:gravity">right</item>
+        <item name="backgroundTint">@color/gray_green_edittext_bg</item>
+    </style>
+
+    <style name="MyToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layoutDirection">ltr</item>
+    </style>
+
+    <style name="MyRadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:layoutDirection">rtl</item>
+    </style>
+
+    <style name="MyCheckbox" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layoutDirection">rtl</item>
+
+        <item name="android:layout_gravity">start|center_vertical</item>
+        <item name="android:layout_marginTop">@dimen/top_down_margin</item>
+        <item name="android:layout_marginBottom">@dimen/top_down_margin</item>
+        <item name="android:layout_marginEnd">@dimen/right_left_margin</item>
+    </style>
+
+    <style name="WhiteControlsToolbar" parent="MyToolbar">
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+    </style>
+
+    <style name="MySpinner" parent="Base.Widget.AppCompat.Spinner">
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="MyListView" parent="Widget.AppCompat.ListView">
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:listSelector">#00000000</item>
+    </style>
+
+    <style name="MyRatingBar" parent="Theme.AppCompat">
+        <item name="colorControlNormal">@color/orange</item>
+        <item name="colorControlActivated">@color/orange</item>
+    </style>
+
+</resources>

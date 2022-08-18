@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Easy MVI</string>
+
+    <!-- Warning Strings -->
+    <string name="invalid_activity">Invalid Activity</string>
+    <string name="user_logging">User Logging</string>
+    <string name="personal_image">Personal Image</string>
+
+    <string name="main_permissions">Main Permissions</string>
+    <string name="other_permission">Other Permissions</string>
+
+    <string name="must_enter_username">Must Enter Username</string>
+    <string name="mustEnterPassword">Must Enter Password</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="ok">Ok</string>
+    <string name="something_went_wrong_please_try_again">something went wrong please try again</string>
+
+</resources>

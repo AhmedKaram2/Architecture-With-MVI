@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:fillViewport="true">
+
+    <FrameLayout
+        android:id="@+id/lay_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/very_light_gray"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/right_left_margin"
+                android:layout_weight="2"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_userName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/right_left_margin"
+                    android:gravity="center"
+                    android:hint="@string/username"
+                    android:inputType="textPersonName"
+                    android:textSize="@dimen/medium_text"
+                    app:met_errorColor="@color/red"
+                    app:met_iconLeft="@mipmap/ic_username" />
+
+                <com.rengwuxian.materialedittext.MaterialEditText
+                    android:id="@+id/et_passWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/right_left_margin"
+                    android:gravity="center"
+                    android:hint="@string/password"
+                    android:inputType="textPassword"
+                    android:textSize="@dimen/medium_text"
+                    app:met_errorColor="@color/red"
+                    app:met_iconLeft="@mipmap/ic_password" />
+
+                <Button
+                    android:id="@+id/btn_login"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_marginStart="@dimen/tabs_size"
+                    android:layout_marginTop="@dimen/right_left_margin"
+                    android:layout_marginEnd="@dimen/tabs_size"
+                    android:background="@drawable/rounded_primary_button"
+                    android:drawableEnd="@mipmap/ic_password"
+                    android:text="@string/login"
+                    android:textSize="@dimen/large_text"
+                    android:textStyle="bold"
+                    android:textColor="@color/white" />
+
+                <ProgressBar
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/tabs_icon_size"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_versionNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/right_left_margin"
+                    android:textColor="@color/primary_dark" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:src="@drawable/city_view" />
+    </FrameLayout>
+</ScrollView>

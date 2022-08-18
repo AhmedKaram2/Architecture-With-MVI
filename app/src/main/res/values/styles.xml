@@ -1,0 +1,242 @@
+<resources>
+
+    <style name="CroppedImageView">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <style name="SingleEllipsizedText">
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+    </style>
+
+    <style name="ScreenTitle">
+        <item name="android:textColor">@color/icons</item>
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/large_text</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="DialogAnimation">
+    <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+    <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <style name="spinner_style">
+        <item name="android:background">@drawable/spinner_bg</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:paddingLeft">8dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+
+    </style>
+
+    <!-- tabs layout style -->
+    <style name="AppTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/orange</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">15dp</item>
+        <item name="tabPaddingEnd">15dp</item>
+        <item name="android:layoutDirection">rtl</item>
+        <item name="tabSelectedTextColor">@color/icons</item>
+
+    </style>
+
+    <style name="RadioButton" parent="Widget.AppCompat.CompoundButton.RadioButton">
+        <item name="android:layout_gravity">start|center_vertical</item>
+        <item name="android:layout_marginTop">@dimen/top_down_margin</item>
+        <item name="android:layout_marginBottom">@dimen/top_down_margin</item>
+        <item name="android:layout_marginEnd">@dimen/right_left_margin</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layoutDirection">rtl</item>
+    </style>
+
+    <style name="WhiteWidget">
+        <item name="colorPrimary">@android:color/white</item>
+        <item name="colorPrimaryDark">@android:color/white</item>
+        <item name="colorAccent">@android:color/white</item>
+        <item name="colorControlNormal">@android:color/white</item>
+        <item name="colorControlActivated">@android:color/white</item>
+        <item name="android:textColorHint">@android:color/white</item>
+        <item name="android:textColorHighlight">@color/white_transparent</item>
+    </style>
+
+    <style name="MultiEditText" parent="Base.V7.Widget.AppCompat.EditText">
+        <item name="android:gravity">top|start</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:paddingBottom">@dimen/top_down_margin</item>
+        <item name="android:paddingTop">@dimen/top_down_margin</item>
+        <item name="android:paddingStart">@dimen/right_left_margin</item>
+        <item name="android:paddingEnd">@dimen/right_left_margin</item>
+    </style>
+
+    <style name="GrayWidget">
+        <item name="colorPrimary">@android:color/darker_gray</item>
+        <item name="colorPrimaryDark">@android:color/darker_gray</item>
+        <item name="colorAccent">@android:color/darker_gray</item>
+        <item name="colorControlNormal">@android:color/darker_gray</item>
+        <item name="colorControlActivated">@android:color/darker_gray</item>
+        <item name="android:textColorHint">@android:color/darker_gray</item>
+        <item name="android:textColorHighlight">@color/light_gray</item>
+    </style>
+
+    <style name="WhiteEditText" parent="MyEditText">
+        <item name="android:theme">@style/WhiteWidget</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="backgroundTint">@android:color/white</item>
+    </style>
+
+    <style name="GrayEditText" parent="MyEditText">
+        <item name="android:theme">@style/GrayWidget</item>
+        <item name="android:textColor">@android:color/darker_gray</item>
+        <item name="backgroundTint">@android:color/darker_gray</item>
+    </style>
+
+    <style name="OrangeWidget">
+        <item name="colorPrimary">@color/orange</item>
+        <item name="colorPrimaryDark">@color/orange</item>
+        <item name="colorAccent">@color/orange</item>
+        <item name="colorControlNormal">@color/orange</item>
+        <item name="colorControlActivated">@color/orange</item>
+        <item name="android:textColorHighlight">@color/orange_transparent</item>
+    </style>
+
+    <style name="OrangeStrokedEditText" parent="MyEditText">
+        <item name="android:theme">@style/OrangeWidget</item>
+        <item name="android:background">@drawable/rounded_corners_orange_stroked_edittext_bg</item>
+        <item name="backgroundTint">@null</item>
+    </style>
+
+    <style name="GreenStrokedEditText" parent="MyEditText">
+        <item name="android:background">@drawable/rounded_corners_green_stroked_edittext_bg</item>
+        <item name="backgroundTint">@null</item>
+    </style>
+
+    <style name="OrangeRadioButton" parent="MyRadioButton">
+        <item name="android:theme">@style/OrangeWidget</item>
+        <item name="android:textColor">@color/orange_radiobutton_text</item>
+    </style>
+
+    <style name="MyCardView" parent="CardView.Light">
+
+        <item name="cardCornerRadius">@dimen/corner_radius</item>
+        <item name="cardElevation">@dimen/cardview_default_elevation</item>
+        <item name="android:layout_margin">
+            @dimen/top_down_margin
+        </item>
+        <item name="android:paddingTop">@dimen/top_down_margin
+        </item>
+        <item name="android:paddingBottom">@dimen/top_down_margin
+        </item>
+        <item name="android:paddingLeft">@dimen/right_left_margin
+        </item>
+        <item name="android:paddingRight">@dimen/right_left_margin
+        </item>
+        <item name="android:shadowColor">@color/cardview_shadow_end_color</item>
+
+    </style>
+
+    <style name="DetailsMainTextView">
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:textSize">@dimen/detailsMainTextSize</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:drawablePadding">@dimen/top_down_margin</item>
+        <item name="android:layout_gravity">start|center_vertical</item>
+        <item name="android:layout_marginTop">@dimen/top_down_margin</item>
+        <item name="android:layout_marginBottom">@dimen/top_down_margin</item>
+        <item name="android:layout_marginEnd">@dimen/top_down_margin</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+
+    </style>
+
+    <style name="taskBarTextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/above_medium_text</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_marginEnd">@dimen/top_down_margin</item>
+        <item name="android:layout_marginStart">@dimen/top_down_margin</item>
+    </style>
+
+    <style name="taskDetailsTextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/above_medium_text</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_margin">@dimen/top_down_margin</item>
+    </style>
+
+    <style name="DetailsSecondryTextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/DetailsSecondaryTextSize</item>
+        <item name="android:clickable">true</item>
+        <item name="android:padding">4dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:layout_gravity">start|center_vertical</item>
+
+    </style>
+
+    <style name="QuestionMainTextView">
+        <item name="android:textColor">@color/gray</item>
+        <item name="android:textSize">@dimen/questionsMainTextSize</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:drawablePadding">@dimen/top_down_margin</item>
+        <item name="android:layout_gravity">start|center_vertical</item>
+        <item name="android:layout_marginTop">@dimen/top_down_margin</item>
+        <item name="android:layout_marginBottom">@dimen/top_down_margin</item>
+        <item name="android:layout_marginEnd">@dimen/top_down_margin</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+
+    </style>
+
+    <style name="QuestionTextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/above_medium_text</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lineSpacingExtra">4dp</item>
+        <item name="android:layout_gravity">start|center_vertical</item>
+    </style>
+
+
+    <style name="iconStyle" parent="Widget.AppCompat.ImageButton">
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:layout_margin">@dimen/top_down_margin</item>
+        <item name="android:padding">@dimen/top_down_margin</item>
+    </style>
+
+    <style name="MyCustomSmallText" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/very_small_text</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+    <style name="MyCustomTabText" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/medium_text</item>
+        <item name="android:textColor">@color/gray</item>
+    </style>
+
+
+
+    <style name="RedTextDialog" parent="Base.Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:colorAccent">@color/red</item>
+        <item name="android:textColor">@color/red</item>
+        <item name="android:textColorPrimary">@color/red</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

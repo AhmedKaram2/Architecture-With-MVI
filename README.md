@@ -3,7 +3,7 @@
 # Architecture With MVI using Kotlin, Coroutines, Retrofit and Unit test
 MVI (Model-View-Intent) streamlines the process of creating and developing applications by introducing a reactive approach  
   
-This repository contains a sample app that implements MVI architecture using Kotlin, ViewModel, Retrofit, Coroutines and etc to make login screen and receive the results.  
+This repository contains a sample app that implements MVI architecture using Kotlin, ViewModel, Retrofit, Coroutines, Hilt and etc to make login screen and receive the results.  
 
 #### How does the MVI work?
 
